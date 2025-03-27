@@ -1,0 +1,76 @@
+/* General Table Styles */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(20, 20, 20, 0.9); /* Dark background */
+  color: #ff0066; /* Neon red text */
+  box-shadow: 0 0 15px #ff0066;
+  border: 2px solid #ff0066;
+  animation: table-glow 1.5s infinite alternate;
+}
+
+/* Table Header */
+thead {
+  background: #330011; /* Dark red */
+}
+
+th {
+  color: #ff3399; /* Lighter neon red */
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ff0066;
+}
+
+/* Table Rows */
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 0, 102, 0.5);
+  transition: background 0.3s ease;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background: rgba(255, 0, 102, 0.2);
+  transition: background 0.3s ease;
+}
+
+/* Table Glow Animation */
+@keyframes table-glow {
+  0% {
+    box-shadow: 0 0 10px #ff0066;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff3399;
+  }
+}
+
+/* Table Borders Glow Effect */
+th, td {
+  border: 1px solid rgba(255, 0, 102, 0.5);
+}
+
+/* Add subtle hover effect on cells */
+td:hover {
+  background: rgba(255, 0, 102, 0.3);
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* Neon Border Animation */
+@keyframes border-glow {
+  0% {
+    border-color: #ff0066;
+    box-shadow: 0 0 5px #ff0066;
+  }
+  100% {
+    border-color: #ff3399;
+    box-shadow: 0 0 15px #ff3399;
+  }
+}
+
+table:hover {
+  animation: border-glow 1.5s infinite alternate;
+}

@@ -1,0 +1,25 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ff0066; /* Neon Red text */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1em;
+}

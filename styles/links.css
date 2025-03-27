@@ -1,0 +1,40 @@
+/* General Link Styles */
+a {
+  color: #ff0066; /* Neon Red */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Glowing Effect */
+a:hover {
+  color: #ff3399; /* Lighter Neon Red */
+  text-shadow: 0 0 5px #ff3399, 0 0 10px #ff3399, 0 0 15px #ff3399;
+  transform: scale(1.05);
+}
+
+/* Animated Underline */
+a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ff0066;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Underline expands on hover */
+a:hover::after {
+  width: 100%;
+}
+
+/* Active and Focus States */
+a:active {
+  color: #ff66b2; /* Slightly lighter red */
+  transform: scale(0.95);
+}
+
+a:focus {
+  outline: none;
+  text-shadow: 0 0 10px #ff3399, 0 0 20px #ff3399;
+}
